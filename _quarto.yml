@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Blog de Alvaro"
+  title: "¡Bienvenido a mi blog!"
   navbar:
     right:
       - about.qmd
