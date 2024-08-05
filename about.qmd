@@ -1,6 +1,6 @@
 ---
 title: "Acerda de este blog"
-image: profile.jpg
+image: profile.png
 about:
   template: jolla
   links:
