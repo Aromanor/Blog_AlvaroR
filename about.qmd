@@ -15,6 +15,6 @@ about:
       href: https://github.com
 ---
 
-About this blog
+# About this blog
 
 Este blog es acerca de mi, sobre mi experiencia y trayectoria.
