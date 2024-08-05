@@ -1,5 +1,5 @@
 ---
-title: "Blog de Alvaro"
+title: "¡Bienvenid@ a mi blog!"
 listing:
   contents: posts
   sort: "date desc"
@@ -12,3 +12,5 @@ title-block-banner: true
 ---
 
 # Notas:
+
+Aquí publico notas sobre temas interesantes:
