@@ -4,6 +4,12 @@ project:
 website:
   title: "Inicio"
   navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - about.qmd 
     right:
       - about.qmd
       - icon: github
@@ -12,7 +18,8 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: minty
+    theme: vapor
+    dark: darkly
     css: styles.css
 
 editor: visual
@@ -20,4 +27,5 @@ editor: visual
 comments:
   giscus:
     repo: Aromanor/Blog_AlvaroR
+
 

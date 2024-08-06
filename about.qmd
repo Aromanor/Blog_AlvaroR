@@ -3,6 +3,7 @@ title: "Acerda de este blog"
 image: profile.jpg
 about:
   template: trestles
+
   links:
     - icon: twitter
       text: Twitter
