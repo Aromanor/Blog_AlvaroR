@@ -18,4 +18,3 @@ df <- readxl::read_excel("C:/Users/alvar/OneDrive/Escritorio/Blog_AlvaroR/ECO_1.
 # Mostrar las primeras filas del data frame
 head(df)
 ```
-

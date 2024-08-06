@@ -1,13 +1,9 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "Primer post sobre mi perfil"
+author: "Alvaro Romano"
 date: "2024-08-05"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "image.png"
 ---
 
-This is a post with executable code.
-
-```{r}
-1 + 1
-```
+# **Perfil**

@@ -11,6 +11,6 @@ page-layout: full
 title-block-banner: true
 ---
 
-# Notas:
+# Posts:
 
 Aquí publico notas sobre temas interesantes:

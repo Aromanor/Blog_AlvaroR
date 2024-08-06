@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
+<meta name="author" content="Alvaro Romano">
 <meta name="dcterms.date" content="2024-08-05">
 
-<title>Post With Code – Inicio</title>
+<title>Primer post sobre mi perfil – Inicio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -149,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Primer post sobre mi perfil</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
                 <div class="quarto-category">code</div>
@@ -164,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Alvaro Romano </p>
             </div>
     </div>
       
@@ -190,15 +156,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is a post with executable code.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="transferencia-de-aprendizaje-y-fine-tuning." class="level1">
+<h1><strong>Transferencia de aprendizaje y fine-tuning</strong>.</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
+<p><strong>Transfer learning</strong> consists of taking features learned on one problem, and leveraging them on a new, similar problem. For instance, features from a model that has learned to identify racoons may be useful to kick-start a model meant to identify skunks.</p>
+<p>Transfer learning is usually done for tasks where your dataset has too little data to train a full-scale model from scratch.</p>
+<p>The most common incarnation of transfer learning in the context of deep learning is the following workflow:</p>
+<ol type="1">
+<li><p>Take layers from a previously trained model.</p></li>
+<li><p>Freeze them, so as to avoid destroying any of the information they contain during future training rounds.</p></li>
+<li><p>Add some new, trainable layers on top of the frozen layers. They will learn to turn the old features into predictions on a new dataset.</p></li>
+<li><p>Train the new layers on your dataset.</p></li>
+</ol>
+<p>A last, optional step, is <strong>fine-tuning</strong>, which consists of unfreezing the entire model you obtained above (or part of it), and re-training it on the new data with a very low learning rate. This can potentially achieve meaningful improvements, by incrementally adapting the pretrained features to the new data.</p>
+<p>First, we will go over the Keras <code>trainable</code> API in detail, which underlies most transfer learning and fine-tuning workflows.</p>
+<p>Then, we’ll demonstrate the typical workflow by taking a model pretrained on the ImageNet dataset, and retraining it on the Kaggle “cats vs dogs” classification dataset.</p>
+<p>This is adapted from <a href="https://www.manning.com/books/deep-learning-with-r">Deep Learning with R</a> and the 2016 blog post <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html">“building powerful image classification models using very little data”</a>.</p>
+<p>Reference: <a href="https://tensorflow.rstudio.com/guides/keras/transfer_learning" class="uri">https://tensorflow.rstudio.com/guides/keras/transfer_learning</a></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
