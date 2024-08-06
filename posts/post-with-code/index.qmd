@@ -16,11 +16,11 @@ Gestión administrativa de todos los procesos de coordinación del Departamento 
 
 \- Coordinación de eventos institucionales académicos y culturales, manejo de personal para cumplir objetivos en proyectos y servicios del departamento.
 
-\- Manejo de análisis de datos, elaboración de informes administrativos, académicos y presupuestales del departamento.
+\- Manejo de análisis de datos, elaboración de informes administrativos, académicos y presupuéstales del departamento.
 
 # Intereses
 
-Busco profundizar en el aprendizaje de Procesamiento de lenguaje Natural, en base a mi proyecto personal "MODELO AUTOMATIZADO PARA CLASIFICAR PRUEBAS DIAGNOSTICAS QUE EVALUAN LA ESCRITURA ACADÉMICA EN LA EDUCACIÓN SUPERIOR"
+Busco profundizar en el aprendizaje de Procesamiento de lenguaje Natural, en base a mi proyecto personal "Modelo Automatizado para clasificar pruebas diagnosticas que evaluan la escritura académica en la educación superior".
 
 Siguiendo esta secuencia de trabajo para construir una herramienta sub-entrenada que clasifique texto:
 
