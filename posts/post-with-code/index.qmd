@@ -7,3 +7,27 @@ image: "image.png"
 ---
 
 # **Perfil**
+
+Comparto un poco de mi experiencia:
+
+EXPERIENCIA LABORAL
+
+UNIVERSIDAD DEL NORTE Cargo: Profesional de apoyo administrativo.
+
+Gestión administrativa de todos los procesos de coordinación del Departamento de Español, en la división del Instituto de Idiomas.
+
+\- Elaboración de contrataciones jurídicas y de docentes por medio de la oficina de Gestión Humana y gestión en contrataciones jurídicas por prestación de servicios.
+
+\- Coordinación de eventos institucionales académicos y culturales, manejo de personal para cumplir objetivos en proyectos y servicios del departamento.
+
+\- Manejo de análisis de datos, elaboración de informes administrativos, académicos y presupuestales del departamento.
+
+\- Procesos de matrícula y funciones de coordinación académica.
+
+# Intereses
+
+Busco profundizar en el aprendizaje de Procesamiento de lenguaje Natural, en base a mi proyecto personal "MODELO AUTOMATIZADO PARA CLASIFICAR PRUEBAS DIAGNOSTICAS QUE EVALUAN LA ESCRITURA ACADÉMICA EN LA EDUCACIÓN SUPERIOR"
+
+Siguiendo esta secuencia de trabajo para construir una herramienta sub-entrenada que clasifique texto:
+
+![](images/clipboard-599955528.png)

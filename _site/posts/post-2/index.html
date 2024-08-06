@@ -156,10 +156,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="perfil" class="level1">
-<h1><strong>Perfil</strong></h1>
+<section id="transferencia-de-aprendizaje-y-fine-tuning." class="level1">
+<h1><strong>Transferencia de aprendizaje y fine-tuning</strong>.</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
+<p><strong>Transfer learning</strong> consists of taking features learned on one problem, and leveraging them on a new, similar problem. For instance, features from a model that has learned to identify racoons may be useful to kick-start a model meant to identify skunks.</p>
+<p>Transfer learning is usually done for tasks where your dataset has too little data to train a full-scale model from scratch.</p>
+<p>The most common incarnation of transfer learning in the context of deep learning is the following workflow:</p>
+<ol type="1">
+<li><p>Take layers from a previously trained model.</p></li>
+<li><p>Freeze them, so as to avoid destroying any of the information they contain during future training rounds.</p></li>
+<li><p>Add some new, trainable layers on top of the frozen layers. They will learn to turn the old features into predictions on a new dataset.</p></li>
+<li><p>Train the new layers on your dataset.</p></li>
+</ol>
+<p>A last, optional step, is <strong>fine-tuning</strong>, which consists of unfreezing the entire model you obtained above (or part of it), and re-training it on the new data with a very low learning rate. This can potentially achieve meaningful improvements, by incrementally adapting the pretrained features to the new data.</p>
+<p>First, we will go over the Keras <code>trainable</code> API in detail, which underlies most transfer learning and fine-tuning workflows.</p>
+<p>Then, we’ll demonstrate the typical workflow by taking a model pretrained on the ImageNet dataset, and retraining it on the Kaggle “cats vs dogs” classification dataset.</p>
+<p>This is adapted from <a href="https://www.manning.com/books/deep-learning-with-r">Deep Learning with R</a> and the 2016 blog post <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html">“building powerful image classification models using very little data”</a>.</p>
+<p>Reference: <a href="https://tensorflow.rstudio.com/guides/keras/transfer_learning" class="uri">https://tensorflow.rstudio.com/guides/keras/transfer_learning</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
