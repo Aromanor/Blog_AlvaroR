@@ -20,7 +20,7 @@ Gestión administrativa de todos los procesos de coordinación del Departamento 
 
 # Intereses
 
-Busco profundizar en el aprendizaje de Procesamiento de lenguaje Natural, en base a mi proyecto personal "Modelo Automatizado para clasificar pruebas diagnosticas que evaluan la escritura académica en la educación superior".
+Busco profundizar en el aprendizaje de Procesamiento de lenguaje Natural, en base a mi proyecto personal ["Modelo Automatizado para clasificar pruebas diagnosticas que evalúan la escritura académica en la educación superior"]{.underline}.
 
 Siguiendo esta secuencia de trabajo para construir una herramienta sub-entrenada que clasifique texto:
 
