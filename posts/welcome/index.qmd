@@ -11,60 +11,11 @@ Esto es a primera vista algo de mi y mi proyecto de NLP:
 
 Me encuentro realizando un proyecto aplicado al afinamiento de una inteligencia artificial, para generar clasificaciones de texto académico en base a un entrenamiento con textos calificados y validados por medio de "Inter-rater Analisis".
 
-Partimos por instalar los paquetes necesarios en Python:
+```{r}
+# O si necesitas proporcionar la ruta completa
+df <- readxl::read_excel("C:/Users/alvar/OneDrive/Escritorio/Blog_AlvaroR/ECO_1.xlsx")
 
-```{python}
-pip install --upgrade pip
-pip install torch==1.11.0 transformers==4.18.0 datasets==2.2.2 accelerate==0.21.0
-pip install transformers datasets pandas openpyxl
-pip install transformers[torch] accelerate
-pip install accelerate -U
-pip install transformers torch pandas
+# Mostrar las primeras filas del data frame
+head(df)
 ```
 
-Luego procedemos con la lectura de datos:
-
-```{python}
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
-
-# Cargar el dataset
-dataset = pd.read_excel('ECO_1.xlsx')
-
-# Rellenar los NaN con cadenas vacías para evitar errores al combinar
-dataset[['Argumento o razón', 'Conclusión']] = dataset[['Argumento o razón', 'Conclusión']].fillna('')
-
-# Combinar los párrafos en una sola columna
-dataset['texto_completo'] = dataset[['Introducción','Argumento base' ,'Argumento o razón', 'Conclusión']].agg(' '.join, axis=1)
-
-# Seleccionar las columnas necesarias
-dataset = dataset[['ID', 'texto_completo', 'Descripción de nivel']]
-
-```
-
-Con esto lograremos adecuarlos con el fin de trabajarlos para su exploración:
-
-```{python}
-# Codificar las etiquetas
-label_encoder = LabelEncoder()
-dataset['labels'] = label_encoder.fit_transform(dataset['Descripción de nivel'])
-
-# Resumen de la cantidad de datos en cada clase
-class_counts = dataset['Descripción de nivel'].value_counts()
-print(class_counts)
-
-# Gráfico de barras de la cantidad de datos en cada clase
-class_counts.plot(kind='bar')
-plt.title('Distribución de Clases')
-plt.xlabel('Clase')
-plt.ylabel('Cantidad')
-plt.show()
-
-# Dividir el dataset en entrenamiento y prueba
-train_texts, val_texts, train_labels, val_labels = train_test_split(
-    dataset['texto_completo'], dataset['labels'], test_size=0.2, random_state=42
-)
-
-```
