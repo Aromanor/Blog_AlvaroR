@@ -1,9 +1,9 @@
 ---
 title: "Primer post sobre mi perfil"
 author: "Alvaro Romano"
-date: "2024-08-05"
+date: "2024-08-04"
 categories: [news, code, analysis]
-image: "image.png"
+image: "image.jpg"
 ---
 
 # **Transferencia de aprendizaje y fine-tuning**.
